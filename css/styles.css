@@ -5,7 +5,7 @@
     --header-background-color: #FFFFFF;
     --footer-background: #2F303A;
     --second-text-color: #757575;
-    
+    --typical-margin: 30 px;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -13,10 +13,30 @@ body {
     background-color: #FFFFFF;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+ul, ol {
+    padding-left: 0;
+    margin: 0;
+}
+
+button {
+    cursor:pointer;
+}
+
+
+img {
+    display: block;
+}
+
+
 .link {
     text-decoration: none;
 }
 /* -----------хедер----------- */
+
+
 .header-link.current {
     color: var(--accent-color)
 }
@@ -36,7 +56,19 @@ body {
     text-decoration: none;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
 /* -----------Лого ---------------*/
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 .header-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -90,6 +122,8 @@ body {
 /* ------------Герой сайту --------------- */
 .hero-studio {
     background-color: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 
@@ -100,6 +134,8 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    Align: Center;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -119,6 +155,11 @@ body {
 
 
 /* ------------Особенности компании------------ */
+.benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 
 .benefits-title-main {
     position: absolute;
@@ -140,6 +181,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    margin-bottom: 10px;
 }
 
 
@@ -158,12 +200,16 @@ body {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 /* --------Наша команда--------- */
 
 .team {
     background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 124px;
+
 }
 
 .team-title {
@@ -171,6 +217,7 @@ body {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .team-title-second {
@@ -178,7 +225,11 @@ body {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
+
+
 .team-text {
     font-size: 16px;
     line-height: 1.19;
@@ -259,6 +310,8 @@ body {
 /* ----------Футер------------- */
 .footer {
     background-color: var(--footer-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo {
     text-decoration: none;
@@ -273,6 +326,7 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-bottom: 20px;
 }
 .footer-logo-studio {
     color: #FFF;
@@ -292,6 +346,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
 }
 .footer-contact:hover, 
 .footer-contact:focus {
