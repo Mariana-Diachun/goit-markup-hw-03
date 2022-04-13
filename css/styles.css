@@ -61,7 +61,10 @@ img {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    outline: 1px solid red;
 }
+
+
 
 
 /* -----------Лого ---------------*/
@@ -122,20 +125,20 @@ img {
 /* ------------Герой сайту --------------- */
 .hero-studio {
     background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 
 .hero-title {
+    text-align: center;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    Align: Center;
-    margin-bottom: 30px;
+    
 }
 
 .hero-btn {
@@ -175,13 +178,15 @@ img {
 }
 
 .benefits-title {
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
-    margin-bottom: 10px;
+
 }
 
 
@@ -196,11 +201,13 @@ img {
 
 
 .activity-title {
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    
 }
 
 /* --------Наша команда--------- */
@@ -213,11 +220,13 @@ img {
 }
 
 .team-title {
+    margin-bottom: 50px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    
 }
 
 .team-title-second {
@@ -243,6 +252,9 @@ img {
 
 
 /* ---------мейн контент порфоліо */
+.portfolio {
+    padding-bottom: 20px;
+}
 
 .portfolio-title {
     position: absolute;
@@ -275,6 +287,7 @@ img {
     cursor: pointer;
 }
 .portfolio-btn {
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -290,7 +303,14 @@ img {
 
 }
 
+.galery-img {
+    margin-top: 56px;
+    margin-bottom: 20px;
+}
+
 .galery-title {
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
