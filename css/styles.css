@@ -13,9 +13,15 @@ body {
     background-color: #FFFFFF;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p, 
+h1,  
+h3, 
+h4, 
+h5, 
+h6 {
     margin:0;
 }
+
 ul, ol {
     padding-left: 0;
     margin: 0;
@@ -68,11 +74,19 @@ img {
 
 
 /* -----------Лого ---------------*/
+.header .container {
+    display: flex;
+}
+
+
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
 }
+
+
 .header-logo {
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -88,6 +102,7 @@ img {
 }
 
 .header-link {
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -95,13 +110,22 @@ img {
     color: inherit;
 }
 
-
 .header-link:hover,
 .header-link:focus {
     color: var(--accent-color);
 }
+.header-list {
+    display:flex;
+}
+
+
 
 /* ---------контакти---------- */
+
+.header-contact- {
+    display: flex;
+}
+
 
 
 .header-link-contact {
