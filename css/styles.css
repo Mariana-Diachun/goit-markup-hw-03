@@ -66,8 +66,7 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 
@@ -124,10 +123,14 @@ img {
     align-items: center;
 }
 
-a {
+.header-link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+/* a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+} */
 
 
 /* ---------контакти---------- */
@@ -169,12 +172,12 @@ a {
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 210px;
+    text-align: center;
 }
 
 
 
 .hero-title {
-    margin-bottom: var(--typical-margin);
     min-width: 200px;
 
     font-weight: 900;
@@ -191,8 +194,10 @@ a {
 }
 
 .hero-btn {
+    margin-top: var(--typical-margin);
     padding: 10px 32px;
     min-width: 200px;
+    
 
     font-family: inherit;
     font-weight: 700;
@@ -207,11 +212,19 @@ a {
 
 
 /* ------------Особенности компании------------ */
+.benefits-list {
+    display: flex;
+}
+
 .benefits {
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
+
+.benefits-item:not(:last-child) {
+    padding-right: var(--typical-margin);
+}
 
 .benefits-title-main {
     position: absolute;
