@@ -7,14 +7,19 @@
     --second-text-color: #757575;
     --typical-margin: 30 px;
 }
+
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: #FFFFFF;
 }
 
+
+
 p, 
-h1,  
+h1,
+h2,  
 h3, 
 h4, 
 h5, 
@@ -31,15 +36,16 @@ button {
     cursor:pointer;
 }
 
-
 img {
     display: block;
 }
 
-
 .link {
     text-decoration: none;
 }
+
+
+
 /* -----------хедер----------- */
 
 
@@ -47,10 +53,13 @@ img {
     color: var(--accent-color)
 }
 .header {
+    border-bottom: 1px solid #ececec;
     background-color: var(--header-background-color);
 }
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .header-logo {
     text-decoration: none;
@@ -66,13 +75,10 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
-
-
-/* -----------Лого ---------------*/
+/* --------- ----------------Хедер---------------------- */
 
 
 .header .container {
@@ -81,11 +87,7 @@ img {
 }
 
 
-
-
 .header-logo {
-    margin-right: 93px;
-
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -100,6 +102,11 @@ img {
     color: var(--primary-text-color);
 }
 
+.header-navigation {
+    margin-left: 93px;
+}
+
+
 .header-link {
     display: block;
 
@@ -109,6 +116,7 @@ img {
     letter-spacing: 0.02em;
     color: inherit;
 }
+
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
@@ -127,10 +135,7 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-/* a {
-    padding-top: 32px;
-    padding-bottom: 32px;
-} */
+
 
 
 /* ---------контакти---------- */
@@ -138,6 +143,8 @@ img {
 
 .header-link-contact {
     display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     font-weight: 500;
     font-size: 14px;
@@ -164,7 +171,7 @@ img {
     margin-right: 50px;
 }
 
-/* -----------Мейн контент Студия---------- */
+/* --------------------Мейн контент СТУДИЯ---------------------- */
 
 /* ------------Герой сайту --------------- */
 
@@ -176,9 +183,8 @@ img {
 }
 
 
-
 .hero-title {
-    /* min-width: 200px; */
+    margin-bottom: 30px;
 
     font-weight: 900;
     font-size: 44px;
@@ -190,13 +196,13 @@ img {
 }
 
 .hero-btn {
+    border: none;
     cursor: pointer;
     text-align: center; 
     margin-top: var(--typical-margin);
     padding: 10px 32px;
     min-width: 200px;
     
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -210,6 +216,9 @@ img {
 
 
 /* ------------Особенности компании------------ */
+
+
+
 .benefits-list {
     display: flex;
 }
@@ -261,6 +270,9 @@ img {
 
 /* ----------Чем ми занимаемся--------- */
 
+.activity {
+    padding-bottom: 94px;
+}
 
 .activity-title {
     margin-bottom: 50px;
@@ -286,10 +298,12 @@ img {
 
 /* --------Наша команда--------- */
 
+
+
 .team {
     background: #F5F4FA;
     padding-top: 94px;
-    padding-bottom: 124px;
+    padding-bottom: 94px;
 
 }
 
@@ -308,8 +322,6 @@ img {
 }
 
 .team-item {
-    padding-bottom: 30px;
-
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -322,6 +334,11 @@ img {
     margin-right: 30px;
 }
 
+.team-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .team-title-second {
     text-align: center;
 
@@ -330,7 +347,6 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
-    margin-top: 30px;
 }
 
 
@@ -348,12 +364,15 @@ img {
 /* -----------ПОРТФОЛИО------------ */
 
 
-/* ---------мейн контент порфоліо */
-.portfolio {
-    padding-bottom: 20px;
+/* ---------мейн контент порфоліо -----------*/
+
+
+.portfolio{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.portfolio-title {
+.visualy-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -364,6 +383,13 @@ img {
     clip-path: insert(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .portfolio-btn.main {
@@ -378,12 +404,14 @@ img {
     background: #2196F3;
 }
 
-
+.portfolio-btn {
+    border :none;
+    margin-right: 8px;
+}
 
 .portfolio-btn {
     cursor: pointer;
-}
-.portfolio-btn {
+    padding: 6px 22px;
 
     font-family: inherit;
     font-weight: 500;
@@ -394,20 +422,16 @@ img {
     background-color: #F5F4FA;
     border-radius: 4px;
 }
+
+
 .portfolio-btn:hover, .portfolio-btn:focus {
     background: var(--accent-color);
     color: #FFFFFF;
 
 }
 
-.galery-img {
-    margin-top: 56px;
-    margin-bottom: 20px;
-}
 
 .galery-title {
-    margin-bottom: 4px;
-
     font-weight: 700;
     font-size: 18px;
     line-height: 2.0;
@@ -422,33 +446,70 @@ img {
     color: var(--second-text-color);
 }
 
+.galery-img {
+    display: block;
+    max-width: 100%;
+}
+.cards {
+    box-sizing: border-box;
+    padding: 20px 24px;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
 
 
-/* ----------Футер------------- */
+.portfolio-galery-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.galery-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+}
+
+
+
+
+/* -------------------------Футер----------------------- */
+
+
 .footer {
     background-color: var(--footer-background);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+
 .footer-logo {
     text-decoration: none;
 }
+
+
 .footer-contact {
     text-decoration: none;
 }
-.footer-logo {
 
+
+.footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
-    
+    color: var(--accent-color);  
 }
+
 .footer-logo-studio {
     color: #FFF;
 }
+
+
 .footer-text {
     margin-top: 20px;
     margin-bottom: 9px;
@@ -460,6 +521,8 @@ img {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
+
+
 .footer-contact {
     font-style: normal;
     font-weight: 400;
@@ -469,10 +532,15 @@ img {
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 9px;
 }
+
+
+
 .footer-contact:hover, 
 .footer-contact:focus {
     color: #FFFFFF ;
 }
+
+
 
 .footer-item +.footer-item {
     margin-top: 9px;
