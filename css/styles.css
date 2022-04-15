@@ -171,14 +171,14 @@ img {
 .hero-studio {
     background-color: #2F303A;
     padding-top: 200px;
-    padding-bottom: 210px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
 
 
 .hero-title {
-    min-width: 200px;
+    /* min-width: 200px; */
 
     font-weight: 900;
     font-size: 44px;
@@ -188,12 +188,10 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.hero-btn {
-    cursor: pointer;
-    align: center;
-}
 
 .hero-btn {
+    cursor: pointer;
+    text-align: center; 
     margin-top: var(--typical-margin);
     padding: 10px 32px;
     min-width: 200px;
@@ -220,11 +218,13 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-
-.benefits-item:not(:last-child) {
-    padding-right: var(--typical-margin);
+.benefits-item {
+    width: 270px;
 }
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 
 .benefits-title-main {
     position: absolute;
@@ -264,12 +264,24 @@ img {
 
 .activity-title {
     margin-bottom: 50px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     
+}
+
+.activity-list {
+    display: flex;
+}
+
+.activity-img {
+    height: auto;
+}
+.activity-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* --------Наша команда--------- */
@@ -283,6 +295,7 @@ img {
 
 .team-title {
     margin-bottom: 50px;
+    text-align: center;
 
     font-weight: 700;
     font-size: 36px;
@@ -290,15 +303,28 @@ img {
     letter-spacing: 0.03em;
 }
 
+.team-list {
+    display: flex;
+}
+
 .team-item {
+    padding-bottom: 30px;
+
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team-title-second {
+    text-align: center;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -309,6 +335,8 @@ img {
 
 
 .team-text {
+    text-align: center;
+
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -409,18 +437,22 @@ img {
     text-decoration: none;
 }
 .footer-logo {
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    margin-bottom: 20px;
+    
 }
 .footer-logo-studio {
     color: #FFF;
 }
 .footer-text {
+    margin-top: 20px;
+    margin-bottom: 9px;
+
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -440,4 +472,8 @@ img {
 .footer-contact:hover, 
 .footer-contact:focus {
     color: #FFFFFF ;
+}
+
+.footer-item +.footer-item {
+    margin-top: 9px;
 }
