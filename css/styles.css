@@ -38,6 +38,7 @@ button {
 
 img {
     display: block;
+    height: auto;
 }
 
 .link {
@@ -293,12 +294,13 @@ img {
     margin-top: 50px;
 }
 
-.activity-img {
-    height: auto;
-}
+
+
 .activity-item:not(:last-child) {
     margin-right: 30px;
 }
+
+
 
 /* --------Наша команда--------- */
 
